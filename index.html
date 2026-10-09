@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meal & Sugar Privacy</title>
+<meta name="description" content="How Meal & Sugar handles your meals, photos and purchases. Most of it never leaves your iPhone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+<div class="frame">
+  <p class="wordmark">Meal <span class="amp">&amp;</span> Sugar</p>
+  <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+
+  <nav class="langs" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="es" aria-pressed="false">Español</button>
+    <button type="button" data-lang="vi" aria-pressed="false">Tiếng Việt</button>
+  </nav>
+
+  <!-- ============================ ENGLISH ============================ -->
+  <article lang="en" data-lang="en">
+    <h1>Your privacy, <em>kept simple.</em></h1>
+    <p class="updated">Effective 9 October 2026</p>
+
+    <section class="summary">
+      <h2>In short</h2>
+      <ul>
+        <li>Your meals, history, ratings, steps and settings stay on your iPhone.</li>
+        <li>A meal photo is sent to our server to be read by AI, then discarded. We never keep your photos.</li>
+        <li>No account, no name, no email address. No ads, no tracking, and we never sell data.</li>
+      </ul>
+    </section>
+
+    <h2><span class="n">1</span>Who we are</h2>
+    <p>Meal &amp; Sugar is made by UTrendtek, Inc. Questions about privacy go to <a href="mailto:admin@utrendtek.com?subject=Meal%20%26%20Sugar%20privacy">admin@utrendtek.com</a>, and a person reads every message.</p>
+
+    <h2><span class="n">2</span>What stays on your iPhone</h2>
+    <p>Your meal history, carbs and sugar, saved meals, weekly ratings, challenge progress, routine settings and reminders are stored only on your iPhone. Steps during the after-meal walk are counted by your iPhone's motion sensor and never leave it. Reminders are local notifications. Your meal history, saved meals, ratings and challenges are left out of iCloud and device backups.</p>
+    <p>To erase all of it, open <strong>Settings › Delete all my data</strong> in the app, or delete the app.</p>
+
+    <h2><span class="n">3</span>Reading a meal photo</h2>
+    <p>Photo scans work only if you allow the AI scan (you choose at the start, and can change it in Settings). When you scan:</p>
+    <ul>
+      <li>The photo is made smaller on your phone, without location or other camera data, and sent over an encrypted connection to our server.</li>
+      <li>Our server passes it to <strong>Claude, an AI model by Anthropic</strong>, which names the foods and estimates portions, carbs, sugar and fiber.</li>
+      <li><strong>We do not store the photo.</strong> Anthropic handles it under its commercial terms and does not use it to train its models (<a href="https://privacy.anthropic.com" rel="noopener">Anthropic's privacy center</a>).</li>
+      <li>The list of foods is kept on our server for up to one day, so a retry after a dropped connection is not counted twice, and is then deleted.</li>
+      <li>For each scan we log its time, cost and outcome, with a scrambled form of your install's ID. No photo and no foods are in that log.</li>
+    </ul>
+    <p>If the AI scan is off, barcode scanning, saved meals, recipes and the routine still work, and no photo is ever sent.</p>
+
+    <h2><span class="n">4</span>Barcodes</h2>
+    <p>When you scan a packaged food, your iPhone sends only the barcode number straight to <a href="https://world.openfoodfacts.org/privacy" rel="noopener">Open Food Facts</a>, a free public food database, to look up its label. We send them nothing else.</p>
+
+    <h2><span class="n">5</span>Your anonymous install ID</h2>
+    <p>The first time you scan or join a challenge, the app creates a random ID for this install. It holds no name, email or phone number. It is used only to count your free and daily scans, to know your subscription, and to place you in a challenge group. It is kept in your iPhone's Keychain, on this device only.</p>
+
+    <h2><span class="n">6</span>Subscription</h2>
+    <p>Apple handles every purchase; we never see your card or your Apple Account. So that our server can allow your scans, your iPhone sends it Apple's signed record of the subscription (which plan, its dates and its transaction number). Apple also tells our server about renewals, cancellations and refunds.</p>
+
+    <h2><span class="n">7</span>Challenge groups (optional)</h2>
+    <p>If you join a challenge group, the people in your group (up to 20) see the nickname you choose, the challenge, and how many days you have won, and you can send each other fixed cheers. Reports and blocks are kept to keep groups safe. Leaving a challenge hides you from the group. To have your nickname removed completely, email us your nickname and the challenge.</p>
+
+    <h2><span class="n">8</span>What we never do</h2>
+    <ul>
+      <li>We never sell or rent your data, or share it with advertisers or data brokers.</li>
+      <li>No ads, no tracking across apps or websites, no analytics tools.</li>
+      <li>The app does not read Apple Health, your contacts or your location.</li>
+    </ul>
+
+    <h2><span class="n">9</span>Who helps us run it</h2>
+    <table>
+      <tr><th>Service</th><th>What for</th><th>What it receives</th></tr>
+      <tr><td>Supabase (United States)</td><td>Our server and database</td><td>Your install ID, scan counts, subscription record, challenge nickname</td></tr>
+      <tr><td>Anthropic</td><td>Reading meal photos</td><td>The photo, for that one scan</td></tr>
+      <tr><td>Apple</td><td>Purchases</td><td>Your purchase, under Apple's privacy policy</td></tr>
+      <tr><td>Open Food Facts</td><td>Barcode labels</td><td>The barcode number, from your phone</td></tr>
+    </table>
+
+    <h2><span class="n">10</span>How long we keep things</h2>
+    <table>
+      <tr><th>Data</th><th>Kept</th></tr>
+      <tr><td>Meal photos</td><td>Not kept by us</td></tr>
+      <tr><td>A scan's food list (on our server)</td><td>Up to 1 day</td></tr>
+      <tr><td>Scan log (time, cost, outcome)</td><td>While the service runs, to watch its cost and reliability</td></tr>
+      <tr><td>Scan counts, subscription record</td><td>While the subscription and the install ID are in use</td></tr>
+      <tr><td>Challenge nickname and progress</td><td>Until you ask us to delete it</td></tr>
+    </table>
+
+    <h2><span class="n">11</span>Your choices</h2>
+    <p>You can turn the AI scan off, delete everything on your phone, or leave a challenge at any time. Wherever you live, you can ask us what we hold about you, or ask us to delete it, by writing to <a href="mailto:admin@utrendtek.com?subject=Meal%20%26%20Sugar%20privacy">admin@utrendtek.com</a>. Because there is no account, tell us your challenge nickname if you have one; scan counts are tied only to an ID we cannot connect to you.</p>
+
+    <h2><span class="n">12</span>Children</h2>
+    <p>Meal &amp; Sugar is meant for adults and is not directed to children under 13.</p>
+
+    <h2><span class="n">13</span>Changes</h2>
+    <p>If this policy changes, we will update this page and its date, and say so in the app when the change matters.</p>
+  </article>
+
+  <!-- ============================ ESPAÑOL ============================ -->
+  <article lang="es" data-lang="es" hidden>
+    <h1>Tu privacidad, <em>sin complicaciones.</em></h1>
+    <p class="updated">Vigente desde el 9 de octubre de 2026</p>
+
+    <section class="summary">
+      <h2>En resumen</h2>
+      <ul>
+        <li>Tus comidas, historial, valoraciones, pasos y ajustes se quedan en tu iPhone.</li>
+        <li>La foto de una comida se envía a nuestro servidor para que la lea una IA y luego se descarta. Nunca guardamos tus fotos.</li>
+        <li>Sin cuenta, sin nombre, sin correo. Sin anuncios, sin rastreo, y nunca vendemos datos.</li>
+      </ul>
+    </section>
+
+    <h2><span class="n">1</span>Quiénes somos</h2>
+    <p>Meal &amp; Sugar es de UTrendtek, Inc. Escríbenos sobre privacidad a <a href="mailto:admin@utrendtek.com?subject=Meal%20%26%20Sugar%20privacidad">admin@utrendtek.com</a>; una persona lee cada mensaje.</p>
+
+    <h2><span class="n">2</span>Lo que se queda en tu iPhone</h2>
+    <p>Tu historial de comidas, carbohidratos y azúcar, comidas guardadas, valoraciones semanales, progreso en los retos, ajustes de la rutina y recordatorios se guardan solo en tu iPhone. Los pasos de la caminata después de comer los cuenta el sensor de movimiento del iPhone y nunca salen de él. Los recordatorios son notificaciones locales. Tu historial, comidas guardadas, valoraciones y retos quedan fuera de iCloud y de las copias de seguridad.</p>
+    <p>Para borrarlo todo, abre <strong>Ajustes › Borrar todos mis datos</strong> en la app, o elimina la app.</p>
+
+    <h2><span class="n">3</span>Cómo se lee la foto de una comida</h2>
+    <p>El escaneo con foto solo funciona si permites el escaneo con IA (lo eliges al empezar y puedes cambiarlo en Ajustes). Al escanear:</p>
+    <ul>
+      <li>La foto se reduce en tu teléfono, sin ubicación ni otros datos de la cámara, y se envía cifrada a nuestro servidor.</li>
+      <li>Nuestro servidor la pasa a <strong>Claude, un modelo de IA de Anthropic</strong>, que nombra los alimentos y estima porciones, carbohidratos, azúcar y fibra.</li>
+      <li><strong>No guardamos la foto.</strong> Anthropic la trata según sus condiciones comerciales y no la usa para entrenar sus modelos (<a href="https://privacy.anthropic.com" rel="noopener">centro de privacidad de Anthropic</a>).</li>
+      <li>La lista de alimentos se guarda en nuestro servidor hasta un día, para que un reintento tras una conexión perdida no cuente dos veces, y luego se borra.</li>
+      <li>De cada escaneo registramos la hora, el costo y el resultado, con una forma cifrada del ID de tu instalación. Ese registro no contiene fotos ni alimentos.</li>
+    </ul>
+    <p>Si el escaneo con IA está desactivado, los códigos de barras, las comidas guardadas, las recetas y la rutina siguen funcionando, y nunca se envía una foto.</p>
+
+    <h2><span class="n">4</span>Códigos de barras</h2>
+    <p>Al escanear un alimento envasado, tu iPhone envía solo el número del código de barras directamente a <a href="https://world.openfoodfacts.org/privacy" rel="noopener">Open Food Facts</a>, una base de datos pública y gratuita, para consultar su etiqueta. No les enviamos nada más.</p>
+
+    <h2><span class="n">5</span>Tu ID de instalación anónimo</h2>
+    <p>La primera vez que escaneas o te unes a un reto, la app crea un ID aleatorio para esta instalación. No contiene nombre, correo ni teléfono. Solo sirve para contar tus escaneos gratuitos y diarios, reconocer tu suscripción y ubicarte en un grupo de reto. Se guarda en el Llavero de tu iPhone, solo en este dispositivo.</p>
+
+    <h2><span class="n">6</span>Suscripción</h2>
+    <p>Apple gestiona cada compra; nunca vemos tu tarjeta ni tu cuenta de Apple. Para que nuestro servidor permita tus escaneos, tu iPhone le envía el registro firmado por Apple de la suscripción (qué plan, sus fechas y su número de transacción). Apple también avisa a nuestro servidor de renovaciones, cancelaciones y reembolsos.</p>
+
+    <h2><span class="n">7</span>Grupos de reto (opcional)</h2>
+    <p>Si te unes a un grupo de reto, las personas de tu grupo (hasta 20) ven el apodo que elijas, el reto y cuántos días has ganado, y pueden enviarse ánimos predefinidos. Los reportes y bloqueos se guardan para mantener los grupos seguros. Al dejar un reto desapareces del grupo. Para borrar tu apodo por completo, escríbenos con tu apodo y el reto.</p>
+
+    <h2><span class="n">8</span>Lo que nunca hacemos</h2>
+    <ul>
+      <li>Nunca vendemos ni alquilamos tus datos, ni los compartimos con anunciantes o intermediarios de datos.</li>
+      <li>Sin anuncios, sin rastreo entre apps o sitios web, sin herramientas de analítica.</li>
+      <li>La app no lee Salud de Apple, tus contactos ni tu ubicación.</li>
+    </ul>
+
+    <h2><span class="n">9</span>Quién nos ayuda a funcionar</h2>
+    <table>
+      <tr><th>Servicio</th><th>Para qué</th><th>Qué recibe</th></tr>
+      <tr><td>Supabase (Estados Unidos)</td><td>Nuestro servidor y base de datos</td><td>Tu ID de instalación, conteo de escaneos, registro de suscripción, apodo del reto</td></tr>
+      <tr><td>Anthropic</td><td>Leer fotos de comidas</td><td>La foto, solo para ese escaneo</td></tr>
+      <tr><td>Apple</td><td>Compras</td><td>Tu compra, según la política de privacidad de Apple</td></tr>
+      <tr><td>Open Food Facts</td><td>Etiquetas por código de barras</td><td>El número del código, desde tu teléfono</td></tr>
+    </table>
+
+    <h2><span class="n">10</span>Cuánto tiempo guardamos los datos</h2>
+    <table>
+      <tr><th>Dato</th><th>Se guarda</th></tr>
+      <tr><td>Fotos de comidas</td><td>No las guardamos</td></tr>
+      <tr><td>Lista de alimentos de un escaneo (en el servidor)</td><td>Hasta 1 día</td></tr>
+      <tr><td>Registro de escaneos (hora, costo, resultado)</td><td>Mientras funcione el servicio, para vigilar su costo y fiabilidad</td></tr>
+      <tr><td>Conteo de escaneos, registro de suscripción</td><td>Mientras la suscripción y el ID de instalación estén en uso</td></tr>
+      <tr><td>Apodo y progreso del reto</td><td>Hasta que nos pidas borrarlo</td></tr>
+    </table>
+
+    <h2><span class="n">11</span>Tus opciones</h2>
+    <p>Puedes desactivar el escaneo con IA, borrar todo lo que hay en tu teléfono o dejar un reto cuando quieras. Vivas donde vivas, puedes pedirnos qué datos tenemos sobre ti o que los borremos escribiendo a <a href="mailto:admin@utrendtek.com?subject=Meal%20%26%20Sugar%20privacidad">admin@utrendtek.com</a>. Como no hay cuenta, dinos tu apodo de reto si tienes uno; el conteo de escaneos solo está unido a un ID que no podemos relacionar contigo.</p>
+
+    <h2><span class="n">12</span>Menores</h2>
+    <p>Meal &amp; Sugar está pensada para adultos y no está dirigida a menores de 13 años.</p>
+
+    <h2><span class="n">13</span>Cambios</h2>
+    <p>Si esta política cambia, actualizaremos esta página y su fecha, y lo diremos en la app cuando el cambio sea importante.</p>
+    <p class="note">Traducción del original en inglés; si hay diferencias, prevalece la versión en inglés.</p>
+  </article>
+
+  <!-- ============================ TIẾNG VIỆT ============================ -->
+  <article lang="vi" data-lang="vi" hidden>
+    <h1>Quyền riêng tư, <em>thật đơn giản.</em></h1>
+    <p class="updated">Có hiệu lực từ ngày 9 tháng 10 năm 2026</p>
+
+    <section class="summary">
+      <h2>Tóm tắt</h2>
+      <ul>
+        <li>Bữa ăn, lịch sử, đánh giá, số bước và cài đặt của bạn ở lại trên iPhone của bạn.</li>
+        <li>Ảnh bữa ăn được gửi đến máy chủ của chúng tôi để AI đọc, rồi bị bỏ đi. Chúng tôi không bao giờ giữ ảnh của bạn.</li>
+        <li>Không tài khoản, không tên, không email. Không quảng cáo, không theo dõi, và không bao giờ bán dữ liệu.</li>
+      </ul>
+    </section>
+
+    <h2><span class="n">1</span>Chúng tôi là ai</h2>
+    <p>Meal &amp; Sugar do UTrendtek, Inc. làm ra. Mọi câu hỏi về quyền riêng tư xin gửi về <a href="mailto:admin@utrendtek.com?subject=Meal%20%26%20Sugar%20quy%E1%BB%81n%20ri%C3%AAng%20t%C6%B0">admin@utrendtek.com</a>; mỗi thư đều có người đọc.</p>
+
+    <h2><span class="n">2</span>Những gì ở lại trên iPhone của bạn</h2>
+    <p>Lịch sử bữa ăn, tinh bột và đường, bữa ăn đã lưu, đánh giá hằng tuần, tiến độ thử thách, cài đặt thói quen và lời nhắc chỉ được lưu trên iPhone của bạn. Số bước trong lúc đi bộ sau bữa ăn do cảm biến chuyển động của iPhone đếm và không bao giờ rời khỏi máy. Lời nhắc là thông báo ngay trên máy. Lịch sử bữa ăn, bữa ăn đã lưu, đánh giá và thử thách không được đưa vào iCloud hay bản sao lưu.</p>
+    <p>Để xoá tất cả, mở <strong>Cài đặt › Xóa toàn bộ dữ liệu</strong> trong ứng dụng, hoặc xoá ứng dụng.</p>
+
+    <h2><span class="n">3</span>Cách đọc ảnh bữa ăn</h2>
+    <p>Quét bằng ảnh chỉ hoạt động khi bạn cho phép quét bằng AI (bạn chọn lúc bắt đầu và có thể đổi trong Cài đặt). Khi bạn quét:</p>
+    <ul>
+      <li>Ảnh được thu nhỏ ngay trên điện thoại, không kèm vị trí hay dữ liệu máy ảnh khác, rồi được gửi qua kết nối mã hoá đến máy chủ của chúng tôi.</li>
+      <li>Máy chủ chuyển ảnh đến <strong>Claude, một mô hình AI của Anthropic</strong>, để gọi tên món ăn và ước tính khẩu phần, tinh bột, đường và chất xơ.</li>
+      <li><strong>Chúng tôi không lưu ảnh.</strong> Anthropic xử lý ảnh theo điều khoản thương mại của họ và không dùng ảnh để huấn luyện mô hình (<a href="https://privacy.anthropic.com" rel="noopener">trung tâm quyền riêng tư của Anthropic</a>).</li>
+      <li>Danh sách món ăn được giữ trên máy chủ tối đa một ngày, để khi mất kết nối và thử lại thì không bị tính hai lần, rồi bị xoá.</li>
+      <li>Với mỗi lần quét, chúng tôi ghi lại thời gian, chi phí và kết quả, kèm mã cài đặt của bạn đã được mã hoá. Bản ghi đó không có ảnh và không có món ăn.</li>
+    </ul>
+    <p>Nếu tắt quét bằng AI, bạn vẫn quét mã vạch, dùng bữa ăn đã lưu, công thức và thói quen sau bữa ăn, và không ảnh nào được gửi đi.</p>
+
+    <h2><span class="n">4</span>Mã vạch</h2>
+    <p>Khi bạn quét thực phẩm đóng gói, iPhone chỉ gửi con số mã vạch thẳng đến <a href="https://world.openfoodfacts.org/privacy" rel="noopener">Open Food Facts</a>, một cơ sở dữ liệu thực phẩm công cộng miễn phí, để tra nhãn. Chúng tôi không gửi gì khác cho họ.</p>
+
+    <h2><span class="n">5</span>Mã cài đặt ẩn danh</h2>
+    <p>Lần đầu bạn quét hoặc tham gia thử thách, ứng dụng tạo một mã ngẫu nhiên cho lần cài đặt này. Mã này không có tên, email hay số điện thoại. Mã chỉ dùng để đếm lượt quét miễn phí và lượt quét mỗi ngày, nhận biết gói đăng ký của bạn, và xếp bạn vào một nhóm thử thách. Mã được giữ trong Chuỗi khoá (Keychain) của iPhone, chỉ trên máy này.</p>
+
+    <h2><span class="n">6</span>Gói đăng ký</h2>
+    <p>Apple xử lý mọi giao dịch mua; chúng tôi không bao giờ thấy thẻ hay tài khoản Apple của bạn. Để máy chủ cho phép bạn quét, iPhone gửi bản ghi gói đăng ký có chữ ký của Apple (gói nào, ngày tháng và số giao dịch). Apple cũng báo cho máy chủ của chúng tôi khi gói được gia hạn, huỷ hoặc hoàn tiền.</p>
+
+    <h2><span class="n">7</span>Nhóm thử thách (tuỳ chọn)</h2>
+    <p>Nếu bạn tham gia một nhóm thử thách, mọi người trong nhóm (tối đa 20 người) thấy biệt danh bạn chọn, thử thách và số ngày bạn đã thắng, và có thể gửi cho nhau những lời cổ vũ có sẵn. Báo cáo và chặn được lưu lại để giữ nhóm an toàn. Rời thử thách thì bạn không còn hiện trong nhóm. Muốn xoá hẳn biệt danh, hãy gửi email cho chúng tôi kèm biệt danh và tên thử thách.</p>
+
+    <h2><span class="n">8</span>Những điều chúng tôi không bao giờ làm</h2>
+    <ul>
+      <li>Không bao giờ bán hay cho thuê dữ liệu của bạn, hay chia sẻ cho bên quảng cáo hoặc bên môi giới dữ liệu.</li>
+      <li>Không quảng cáo, không theo dõi bạn qua ứng dụng hay trang web khác, không công cụ phân tích.</li>
+      <li>Ứng dụng không đọc Sức khoẻ (Apple Health), danh bạ hay vị trí của bạn.</li>
+    </ul>
+
+    <h2><span class="n">9</span>Những dịch vụ giúp chúng tôi vận hành</h2>
+    <table>
+      <tr><th>Dịch vụ</th><th>Để làm gì</th><th>Nhận được gì</th></tr>
+      <tr><td>Supabase (Hoa Kỳ)</td><td>Máy chủ và cơ sở dữ liệu</td><td>Mã cài đặt, số lượt quét, bản ghi gói đăng ký, biệt danh thử thách</td></tr>
+      <tr><td>Anthropic</td><td>Đọc ảnh bữa ăn</td><td>Tấm ảnh, chỉ cho lần quét đó</td></tr>
+      <tr><td>Apple</td><td>Mua gói đăng ký</td><td>Giao dịch của bạn, theo chính sách quyền riêng tư của Apple</td></tr>
+      <tr><td>Open Food Facts</td><td>Tra nhãn theo mã vạch</td><td>Con số mã vạch, gửi từ điện thoại của bạn</td></tr>
+    </table>
+
+    <h2><span class="n">10</span>Chúng tôi giữ dữ liệu bao lâu</h2>
+    <table>
+      <tr><th>Dữ liệu</th><th>Thời gian giữ</th></tr>
+      <tr><td>Ảnh bữa ăn</td><td>Chúng tôi không giữ</td></tr>
+      <tr><td>Danh sách món của một lần quét (trên máy chủ)</td><td>Tối đa 1 ngày</td></tr>
+      <tr><td>Nhật ký quét (thời gian, chi phí, kết quả)</td><td>Trong suốt thời gian dịch vụ hoạt động, để theo dõi chi phí và độ ổn định</td></tr>
+      <tr><td>Số lượt quét, bản ghi gói đăng ký</td><td>Khi gói đăng ký và mã cài đặt còn được dùng</td></tr>
+      <tr><td>Biệt danh và tiến độ thử thách</td><td>Cho đến khi bạn yêu cầu xoá</td></tr>
+    </table>
+
+    <h2><span class="n">11</span>Lựa chọn của bạn</h2>
+    <p>Bạn có thể tắt quét bằng AI, xoá mọi thứ trên điện thoại, hoặc rời thử thách bất cứ lúc nào. Dù bạn sống ở đâu, bạn đều có thể hỏi chúng tôi đang giữ gì về bạn, hoặc yêu cầu xoá, bằng cách viết thư đến <a href="mailto:admin@utrendtek.com?subject=Meal%20%26%20Sugar%20quy%E1%BB%81n%20ri%C3%AAng%20t%C6%B0">admin@utrendtek.com</a>. Vì không có tài khoản, xin cho chúng tôi biết biệt danh thử thách nếu có; số lượt quét chỉ gắn với một mã mà chúng tôi không thể liên kết với bạn.</p>
+
+    <h2><span class="n">12</span>Trẻ em</h2>
+    <p>Meal &amp; Sugar dành cho người lớn và không hướng đến trẻ em dưới 13 tuổi.</p>
+
+    <h2><span class="n">13</span>Thay đổi</h2>
+    <p>Nếu chính sách này thay đổi, chúng tôi sẽ cập nhật trang này cùng ngày hiệu lực, và báo trong ứng dụng khi thay đổi quan trọng.</p>
+    <p class="note">Bản dịch từ bản gốc tiếng Anh; nếu có khác biệt, bản tiếng Anh được áp dụng.</p>
+  </article>
+
+  <footer>
+    <a href="support.html">Support</a> · <a href="mailto:admin@utrendtek.com">admin@utrendtek.com</a>
+    <p>© 2026 UTrendtek, Inc.</p>
+  </footer>
+</div>
+</main>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll(".langs button");
+    function show(lang) {
+      document.querySelectorAll("article[data-lang]").forEach(function (a) { a.hidden = a.dataset.lang !== lang; });
+      buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () {
+        show(b.dataset.lang);
+        try { history.replaceState(null, "", "#" + b.dataset.lang); } catch (e) {}
+      });
+    });
+    var wanted = (location.hash || "").slice(1) || (navigator.language || "en").slice(0, 2);
+    show(["en", "es", "vi"].indexOf(wanted) >= 0 ? wanted : "en");
+  })();
+</script>
+</body>
+</html>

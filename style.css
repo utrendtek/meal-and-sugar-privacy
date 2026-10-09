@@ -1,0 +1,100 @@
+/* Meal & Sugar: the app's own look. Paper, deep green, gold for lines only;
+   words in ink or deep gold (readable: 4.9:1 and up). */
+:root {
+  --paper: #F6F2EA;
+  --card: #FFFDF8;
+  --ink: #1F2A24;
+  --ink2: #66706A;
+  --accent: #24392F;
+  --gold: #B4924F;
+  --gold-text: #85641F;
+  --rule: #E4DCCB;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #121614;
+    --card: #1A201D;
+    --ink: #EFE9DD;
+    --ink2: #A9B1AB;
+    --accent: #CFE0D4;
+    --gold: #C9A865;
+    --gold-text: #D8B872;
+    --rule: #2C3430;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 500 17px/1.6 "Plus Jakarta Sans", -apple-system, system-ui, sans-serif;
+}
+.page { max-width: 720px; margin: 0 auto; padding: 28px 16px 64px; }
+.frame {
+  border: 1px solid var(--gold);
+  border-radius: 28px;
+  padding: 36px 24px 40px;
+  background: var(--card);
+}
+@media (min-width: 640px) { .frame { padding: 48px 48px 52px; } }
+
+.wordmark {
+  font: 700 30px/1 "Cormorant Garamond", Georgia, serif;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+.wordmark .amp { color: var(--gold-text); font-style: italic; }
+.ornament { display: flex; align-items: center; gap: 12px; justify-content: center; margin: 14px 0 0; }
+.ornament span { height: 1px; width: 48px; background: var(--gold); }
+.ornament i { width: 6px; height: 6px; transform: rotate(45deg); background: var(--gold); }
+
+h1 {
+  font: 700 44px/1.08 "Cormorant Garamond", Georgia, serif;
+  text-align: center;
+  margin: 26px 0 0;
+}
+h1 em { display: block; font-style: italic; color: var(--gold-text); }
+.updated { text-align: center; color: var(--ink2); font-size: 14px; margin: 10px 0 0; }
+
+.langs { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin: 22px 0 0; }
+.langs button {
+  font: 700 14px/1 "Plus Jakarta Sans", system-ui, sans-serif;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 10px 16px;
+  min-height: 40px;
+  cursor: pointer;
+}
+.langs button[aria-pressed="true"] { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+
+.summary {
+  margin: 30px 0 0;
+  padding: 20px 22px;
+  border-radius: 20px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+.summary h2 { margin-top: 0; }
+.summary ul { margin: 0; padding-left: 20px; }
+.summary li { margin: 6px 0; font-weight: 600; }
+
+h2 {
+  font: 700 26px/1.2 "Cormorant Garamond", Georgia, serif;
+  margin: 34px 0 8px;
+}
+h2 .n { color: var(--gold-text); margin-right: 8px; }
+p, li { margin: 8px 0; }
+ul { padding-left: 22px; }
+strong { font-weight: 700; }
+a { color: var(--gold-text); font-weight: 700; text-underline-offset: 3px; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--rule); }
+th { font-weight: 700; color: var(--ink2); font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; }
+.note { color: var(--ink2); font-size: 15px; }
+footer { text-align: center; color: var(--ink2); font-size: 14px; margin-top: 28px; }
+footer a { margin: 0 6px; }
+[hidden] { display: none !important; }
